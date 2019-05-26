@@ -20,7 +20,7 @@ public class Trabalho_2 {
         receptor.setMarca("oi livre");
         receptor.setModelo("OIHDfull");
         receptor.setNumeroDeSerie(458422);
-        receptor.setSintonia(200);
+        receptor.setCanal(200);
         receptor.setVolume(80);
         
         tv.informacao();
