@@ -5,6 +5,7 @@ package trabalho_2;
 public class Receptor extends Aparelho  implements Controle {
     private int volume;
     private int canal;
+    
 
     
     
@@ -18,12 +19,12 @@ public class Receptor extends Aparelho  implements Controle {
     }
     
     
-    void setSintonia(int sintonia){
-        this.canal = sintonia;
+    void setCanal(int canal){
+        this.canal = canal;
     }
     
     
-    int getSintonia(){
+    int getCanal(){
         return canal;
     }
     
@@ -52,8 +53,8 @@ public class Receptor extends Aparelho  implements Controle {
     @Override
     public void proximoCanal() {
         if(this.getLigado() == true){
-            this.setSintonia(++canal);
-            System.out.println("sintonia: " + getSintonia());
+            this.setCanal(++canal);
+            System.out.println("Canal: " + getCanal());
         }
     }
 
@@ -61,8 +62,8 @@ public class Receptor extends Aparelho  implements Controle {
     @Override
     public void voltarCanal() {
         if(this.getLigado() == true){
-            this.setSintonia(--canal);
-            System.out.println("sintonia: " + getSintonia());
+            this.setCanal(--canal);
+            System.out.println("Canal: " + getCanal());
         }
     }
 
