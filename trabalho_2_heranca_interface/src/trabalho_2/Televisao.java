@@ -7,8 +7,15 @@ public class Televisao extends Aparelho  implements Controle{
     private int canal;
     
     
-    
+    public Televisao(){
+        
+    }
    
+    public Televisao(String marca, String modelo, int numeroDeserie){
+        this.setMarca(marca);
+        this.setModelo(modelo);
+        this.setNumeroDeSerie(numeroDeserie);
+    }
     
     void setVolume(int volume){
         this.volume = volume;
