@@ -5,6 +5,7 @@ package trabalho_2;
 public class Televisao extends Aparelho  implements Controle{
     private int volume;
     private int canal;
+    private boolean mudo;
     
     
     public Televisao(){
@@ -83,5 +84,8 @@ public class Televisao extends Aparelho  implements Controle{
             System.out.println("desligada");
         }
     }
+    
+    
+  
        
 }
