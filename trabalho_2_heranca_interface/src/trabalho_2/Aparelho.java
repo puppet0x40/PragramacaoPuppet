@@ -47,11 +47,7 @@ public class Aparelho {
         return ligado; 
     }
     
-    void informacao(){
-        System.out.println("nome: " + this.marca);
-        System.out.println("modelo: " + this.modelo);
-        System.out.println("numero de serie:" + this.numeroDeSerie);
-    }
+    
     
     
 
